@@ -1,0 +1,275 @@
+html{height:100%;}
+body{margin: 0; height: 100%;}
+h1, h2, p{margin: 0px;}
+::-webkit-input-placeholder {color: white;}
+:-moz-placeholder {color: white;}
+::-moz-placeholder {color: white;}
+:-ms-input-placeholder {color: white;}
+#container{height: 100%; overflow: auto;}
+#header{
+	width: 100%;
+	background-image: url(../images/awafrut/logo-app.jpg), url(../images/awafrut/logo.jpg);
+	background-repeat: no-repeat, no-repeat;
+	background-position: left center, right center;
+}
+@media all and (orientation:portrait){
+	#header{height: 17%; background-size: auto 75%, auto 90%;}
+}
+@media all and (orientation:landscape){
+	#header{height: 20%; background-size: auto 90%, auto 100%;}
+}
+/* Home */
+.content#home{}
+	.content#home .texto{
+		background-color: #ffff00;
+		background-image: url(../images/awafrut/textos/home.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+	.content#home .fondo{background-image: url(../images/awafrut/fondo-personas.jpg); background-repeat: no-repeat; position: relative;}
+		.content#home .fondo .participar{
+			background-color: #ffff00;
+			background-image: url(../images/awafrut/textos/participa.jpg);
+			background-repeat: no-repeat;
+			margin: 0 auto;
+			display: block;
+			position: relative;
+		}
+			.content#home .fondo .participar .tablet{
+				background-image: url(../images/awafrut/tablet.png);
+				background-repeat: no-repeat;
+				position: absolute;
+			}
+	.content#home .botones{position: relative;}
+		.content#home .botones a{display: inline-block; position: absolute; background-repeat: no-repeat; background-position: center center;}
+		.content#home .botones .fan{background-color: #1da7ff; background-image: url(../images/awafrut/botones/btn-fan.jpg);}
+		.content#home .botones .share{background-color: #207eff; background-image: url(../images/awafrut/botones/btn-share.jpg);}
+@media all and (orientation:portrait){
+	.content#home{height: 83%;}
+		.content#home .texto{height: 14%; background-size: auto 60%;}
+		.content#home .fondo{height: 70%; background-size: auto 120%; background-position: center bottom;}
+			.content#home .fondo .participar{width: 75%; height: 20%; top: 70%; background-size: 60% auto; background-position: 80% center;}
+				.content#home .fondo .participar .tablet{width: 36%; height: 165%; top: -30%; left: -10%; background-size: contain;}
+		.content#home .botones{height: 16%;}
+			.content#home .botones a{width: 35%; height: 50%; top: 25%; background-size: 100% auto;}
+			.content#home .botones .fan{left: 13%;}
+			.content#home .botones .share{right: 13%;}
+}
+@media all and (orientation:landscape){
+	.content#home{height: 80%;}
+		.content#home .texto{height: 18%; background-size: auto 75%;}
+		.content#home .fondo{height: 67%; background-size: 100% auto; background-position: center center;}
+			.content#home .fondo .participar{width: 50%; height: 30%; top: 65%; background-size: auto 70%; background-position: 70% center;}
+				.content#home .fondo .participar .tablet{width: 37%; height: 145%; top: -40%; left: -5%; background-size: contain}
+		.content#home .botones{height: 15%;}
+			.content#home .botones a{width: 22%; height: 70%; top: 15%; background-size: auto 100%;}
+			.content#home .botones .fan{left: 25%;}
+			.content#home .botones .share{right: 25%;}
+}
+/* End Home */
+/* Preguntas */
+.content#preguntas{}
+	.content#preguntas .texto{
+		background-color: #ffff00;
+		color: #fb801e;
+		overflow: hidden;
+		font-style: italic;
+	}
+		.content#preguntas .texto .numero{background-repeat: no-repeat; background-position: center center; background-size: contain; height: 100%; float: left;}
+		.content#preguntas .texto h1{float: left;}
+	.content#preguntas .fondo{background-image: url(../images/awafrut/fondos/fondo.jpg); position: relative; text-align: center; overflow: auto;}
+		.content#preguntas .fondo .loading{
+			display: none;
+			background-image: url(../images/awafrut/loading.gif);
+			width: 75%;
+			margin: 0 auto;
+			background-position: center center;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		.content#preguntas .fondo .respuestas{display: none;}
+			.content#preguntas .fondo .respuesta{
+				font-family: Arial;
+				text-align: left;
+				display: block;
+				font-size: 15px;
+				background-color: #ff7200;
+				background-image: url(../images/awafrut/botones/respuesta.jpg);
+				background-repeat: no-repeat;
+				text-decoration: none;
+				color: white;
+				margin: 0 auto;
+			}
+			.content#preguntas .fondo .respuesta.selected{background-image: url(../images/awafrut/botones/respuesta-selected.jpg);}
+@media all and (orientation:portrait){
+	.content#preguntas{height: 83%;}
+		.content#preguntas .texto{min-height: 14%;}
+			.content#preguntas .texto .numero{width: 16%; margin: 0% 2%;}
+			.content#preguntas .texto h1{width: 80%; width: 77%; padding-right: 3%;}
+		.content#preguntas .fondo{min-height: 86%; background-size: 20% auto;}
+			.content#preguntas .fondo .respuestas{}
+			.content#preguntas .fondo .respuesta:first-child{margin-top: 3%;}
+			.content#preguntas .fondo .respuesta{margin-bottom: 2%; padding: 1% 2% 1% 12%; background-size: 3% auto; background-position: 3% center; margin: 0% 6%; margin-bottom: 3%;}
+}
+@media all and (orientation:landscape){
+	.content#preguntas{height: 80%;}
+		.content#preguntas .texto{min-height: 18%;}
+			.content#preguntas .texto .numero{width: 8%; margin: 0% 1%;}
+			.content#preguntas .texto h1{width: 90%; width: 88%; padding-right: 2%;}
+		.content#preguntas .fondo{min-height: 82%; background-size: 7% auto;}
+			.content#preguntas .fondo .respuestas{}
+			.content#preguntas .fondo .respuesta:first-child{margin-top: 2%;}
+			.content#preguntas .fondo .respuesta{margin-bottom: 1%; padding: 1% 2% 1% 5%; background-size: 2% auto; background-position: 1% center; margin: 0% 2%; margin-bottom: 1%;}
+}
+/* End Preguntas */
+/* Resultado */
+.content#resultado{}
+	.content#resultado .texto{
+		background-color: #ffff00; background-repeat: no-repeat; background-position: center center; background-size: auto 75%;
+	}
+	.content#resultado .fondo{position: relative; text-align: center; overflow: hidden;}
+		.content#resultado .fondo .resultado{margin: 0 auto; height: 80%; overflow: hidden;}
+		.content#resultado .fondo .resultado.mango{background-color: #ff4a21;}
+		.content#resultado .fondo .resultado.pera{background-color: #00cd65;}
+		.content#resultado .fondo .resultado.pomelo{background-color: #ff704a;}
+		.content#resultado .fondo .resultado.manzana{background-color: #ff2223;}
+		.content#resultado .fondo .resultado.naranja{background-color: #ff7e16;}
+		.content#resultado .fondo .resultado.limon{background-color: #66cf00;}
+			.content#resultado .fondo .resultado .text{font-family: georgia; text-align: left; color: white;}
+			.content#resultado .fondo .resultado .datos{
+				display: block;
+				background-color: #fbfa3b;
+				background-image: url(../images/awafrut/botones/datos.jpg);
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: auto 80%;
+			}
+		.content#resultado .fondo .botones{position: relative;}
+			.content#resultado .fondo .botones a{display: inline-block; background-repeat: no-repeat; background-position: center center; background-size: auto 100%;}
+			.content#resultado .fondo .botones .fan{background-color: #1da7ff; background-image: url(../images/awafrut/botones/btn-fan.jpg);}
+			.content#resultado .fondo .botones .share{background-color: #207eff; background-image: url(../images/awafrut/botones/btn-share.jpg);}
+@media all and (orientation:portrait){
+	.content#resultado{height: 83%;}
+		.content#resultado .texto{height: 14%;}
+		.content#resultado .fondo{min-height: 86%; background-size: 20% auto;}
+			.content#resultado .fondo .resultado{margin: 4% 4% 0%;}
+				.content#resultado .fondo .resultado .text{margin: 5% 5%;}
+				.content#resultado .fondo .resultado .datos{width: 65%; height: 14%; margin: 3% 5%;}
+			.content#resultado .fondo .botones{height: 16%;}
+				.content#resultado .fondo .botones a{width: 35%; height: 50%; top: 25%;}
+				.content#resultado .fondo .botones .fan{left: 13%;}
+				.content#resultado .fondo .botones .share{right: 13%;}
+}
+@media all and (orientation:landscape){
+	.content#resultado{height: 80%;}
+		.content#resultado .texto{height: 18%;}
+		.content#resultado .fondo{min-height: 82%; background-size: 7% auto;}
+			.content#resultado .fondo .resultado{margin: 2% 2% 0%;}
+				.content#resultado .fondo .resultado .text{margin: 2% 4%;}
+				.content#resultado .fondo .resultado .datos{width: 30%; height: 25%; margin: 1% 4%;}
+			.content#resultado .fondo .botones{height: 15%;}
+				.content#resultado .fondo .botones a{width: 22%; height: 70%; top: 15%;}
+				.content#resultado .fondo .botones .fan{left: 25%;}
+				.content#resultado .fondo .botones .share{right: 25%;}
+}
+/* End Resultado */
+/* Registro */
+.content#registro{}
+	.content#registro .texto{
+		background-color: #ffff00;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.content#registro .fondo{background-image: url(../images/awafrut/fondos/fondo.jpg); position: relative; text-align: center; overflow: hidden;}
+		.content#registro .fondo form{height: 95%;}
+			.content#registro .fondo form .input{border: none; background-color: #ff7200; width: 90%; padding: 3% 5%; color: white; font-family: Times; text-align: start;}
+				.content#registro .fondo form .input a{color: white;}
+			.content#registro .fondo form .enviar{
+				background-color: #00aeff;
+				display: block;
+				background-image: url(../images/awafrut/botones/enviar.jpg);
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: auto 35%;
+			}
+@media all and (orientation:portrait){
+	.content#registro{height: 83%;}
+		.content#registro .texto{height: 14%; background-size: auto 65%; background-image: url(../images/awafrut/textos/registro-vertical.jpg);}
+		.content#registro .fondo{min-height: 86%; background-size: 20% auto;}
+			.content#registro .fondo form{margin: 3% 5%;}
+				.content#registro .fondo form .input{margin-bottom: 3%;}
+				.content#registro .fondo form .enviar{width: 40%; height: 10%;}
+}
+@media all and (orientation:landscape){
+	.content#registro{height: 80%;}
+		.content#registro .texto{height: 18%; background-size: auto 65%; background-image: url(../images/awafrut/textos/registro-horizontal.jpg);}
+		.content#registro .fondo{min-height: 82%; background-size: 7% auto;}
+			.content#registro .fondo form{margin: 1% 4%;}
+				.content#registro .fondo form .input{margin-bottom: 1%;}
+				.content#registro .fondo form .enviar{width: 30%; height: 20%;}
+}
+
+@media all and (orientation:portrait) and (min-width: 700px){
+	.content#registro .texto{background-image: url(../images/awafrut/textos/registro-vertical-hd.jpg);}
+}
+
+@media all and (orientation:landscape) and (min-width: 700px){
+	.content#registro .texto{background-image: url(../images/awafrut/textos/registro-horizontal-hd.jpg);}
+}
+/* End Registro */
+/* Final */
+.content#final{}
+	.content#final .texto{
+		background-color: #ffff00;
+		background-image: url(../images/awafrut/textos/gracias.jpg);
+		background-repeat: no-repeat;
+	}
+	.content#final .fondo{background-image: url(../images/awafrut/fondos/fondo.jpg); position: relative; text-align: center; overflow: hidden;}
+		.content#final .fondo .caja{ position: relative; background-color: #ffba00; background-repeat: no-repeat; overflow: hidden;}
+			.content#final .fondo .caja .text{background-repeat: no-repeat; background-position: center center; background-size: contain;}
+			.content#final .fondo .caja .botellas{background-repeat: no-repeat; background-image: url(../images/awafrut/botellas.jpg); background-position: center center; background-size: contain;}
+			.content#final .fondo .caja .fb-awafrut{
+				background-color: #207eff;
+				background-image: url(../images/awafrut/botones/awafrut-fb.jpg);
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: auto 65%;
+			}
+@media all and (orientation:portrait){
+	.content#final{height: 83%;}
+		.content#final .texto{height: 14%; background-size: 85% auto; background-position: center center;}
+		.content#final .fondo{height: 86%; background-size: 20% auto;}
+			.content#final .fondo .caja{
+				margin: 5% 5%;
+				height: 90%;
+			}
+				.content#final .fondo .caja .text{background-image: url(../images/awafrut/textos/final-vertical.jpg); height: 20%; width: 86%; margin: 0% 7%;}
+				.content#final .fondo .caja .botellas{height: 60%; width: 76%; margin: 0% 12%; background-size: 100% auto; background-position: center top;}
+				.content#final .fondo .caja .fb-awafrut{display: block; margin: 0 auto; width: 70%; height: 15%; margin-bottom: 5%;}
+}
+@media all and (orientation:landscape){
+	.content#final{height: 80%;}
+		.content#final .texto{height: 18%; background-size: auto 65%; background-position: 10% center;}
+		.content#final .fondo{height: 82%; background-size: 7% auto;}
+			.content#final .fondo .caja{
+				margin: 2% 5%;
+				height: 85%;
+			}
+				.content#final .fondo .caja .text{background-image: url(../images/awafrut/textos/final.jpg); height: 38%; float: right; width: 45%; margin: 5% 5% 0% 0%;}
+				.content#final .fondo .caja .botellas{width: 50%; height: 90%; margin-top: 4%; float: left;}
+				.content#final .fondo .caja .fb-awafrut{display: block; height: 25%; width: 45%; margin: 3% 5% 0% 0%; float: right;}
+}
+
+@media all and (min-width: 700px){
+	.content#final .fondo .caja .botellas{background-image: url(../images/awafrut/botellas-hd.jpg);}
+	.content#final .texto{	background-image: url(../images/awafrut/textos/gracias-hd.jpg);}
+}
+
+@media all and (orientation:portrait) and (min-width: 700px){
+	.content#final .fondo .caja .text{background-image: url(../images/awafrut/textos/final-vertical-hd.jpg);}
+}
+
+@media all and (orientation:landscape) and (min-width: 700px){
+	.content#final .fondo .caja .text{background-image: url(../images/awafrut/textos/final-hd.jpg);}
+}
+/* End Final */

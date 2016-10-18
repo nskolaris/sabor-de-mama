@@ -1,0 +1,49 @@
+#content{}
+	#content .texto{
+		background-color: #ffff00; background-repeat: no-repeat; background-position: center center; background-size: auto 75%;
+	}
+	#content .fondo{position: relative; text-align: center; overflow: hidden;}
+		#content .fondo .resultado{margin: 0 auto; height: 80%; overflow: hidden;}
+		#content .fondo .resultado.mango{background-color: #ff4a21;}
+		#content .fondo .resultado.pera{background-color: #00cd65;}
+		#content .fondo .resultado.pomelo{background-color: #ff704a;}
+		#content .fondo .resultado.manzana{background-color: #ff2223;}
+		#content .fondo .resultado.naranja{background-color: #ff7e16;}
+		#content .fondo .resultado.limon{background-color: #66cf00;}
+			#content .fondo .resultado .text{font-family: georgia; text-align: left; color: white;}
+			#content .fondo .resultado .datos{
+				display: block;
+				background-color: #fbfa3b;
+				background-image: url(../images/awafrut/botones/datos.jpg);
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: auto 80%;
+			}
+		#content .fondo .botones{position: relative;}
+			#content .fondo .botones a{display: inline-block; position: absolute; background-repeat: no-repeat; background-position: center center; background-size: auto 100%;}
+			#content .fondo .botones .fan{background-color: #1da7ff; background-image: url(../images/awafrut/botones/btn-fan.jpg);}
+			#content .fondo .botones .share{background-color: #207eff; background-image: url(../images/awafrut/botones/btn-share.jpg);}
+@media all and (orientation:portrait){
+	#content{height: 83%;}
+		#content .texto{height: 14%;}
+		#content .fondo{min-height: 86%; background-size: 20% auto;}
+			#content .fondo .resultado{margin: 4% 4% 0%;}
+				#content .fondo .resultado .text{margin: 5% 5%;}
+				#content .fondo .resultado .datos{width: 65%; height: 14%; margin: 3% 5%;}
+			#content .fondo .botones{height: 16%;}
+				#content .fondo .botones a{width: 35%; height: 50%; top: 25%;}
+				#content .fondo .botones .fan{left: 13%;}
+				#content .fondo .botones .share{right: 13%;}
+}
+@media all and (orientation:landscape){
+	#content{height: 80%;}
+		#content .texto{height: 18%;}
+		#content .fondo{min-height: 82%; background-size: 7% auto;}
+			#content .fondo .resultado{margin: 2% 2% 0%;}
+				#content .fondo .resultado .text{margin: 2% 4%;}
+				#content .fondo .resultado .datos{width: 30%; height: 25%; margin: 1% 4%;}
+			#content .fondo .botones{height: 15%;}
+				#content .fondo .botones a{width: 22%; height: 70%; top: 15%;}
+				#content .fondo .botones .fan{left: 25%;}
+				#content .fondo .botones .share{right: 25%;}
+}

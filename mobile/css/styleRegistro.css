@@ -1,0 +1,43 @@
+#container{//overflow: auto;}
+#content{}
+	#content .texto{
+		background-color: #ffff00;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	#content .fondo{background-image: url(../images/awafrut/fondos/fondo.jpg); position: relative; text-align: center; overflow: hidden;}
+		#content .fondo form{height: 95%;}
+			#content .fondo form .input{border: none; background-color: #ff7200; width: 90%; padding: 3% 5%; color: white; font-family: Times; text-align: start;}
+				#content .fondo form .input a{color: white;}
+			#content .fondo form .enviar{
+				background-color: #00aeff;
+				display: block;
+				background-image: url(../images/awafrut/botones/enviar.jpg);
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: auto 35%;
+			}
+@media all and (orientation:portrait){
+	#content{height: 83%;}
+		#content .texto{height: 14%; background-size: auto 65%; background-image: url(../images/awafrut/textos/registro-vertical.jpg);}
+		#content .fondo{min-height: 86%; background-size: 20% auto;}
+			#content .fondo form{margin: 3% 5%;}
+				#content .fondo form .input{margin-bottom: 3%;}
+				#content .fondo form .enviar{width: 40%; height: 10%;}
+}
+@media all and (orientation:landscape){
+	#content{height: 80%;}
+		#content .texto{height: 18%; background-size: auto 65%; background-image: url(../images/awafrut/textos/registro-horizontal.jpg);}
+		#content .fondo{min-height: 82%; background-size: 7% auto;}
+			#content .fondo form{margin: 1% 4%;}
+				#content .fondo form .input{margin-bottom: 1%;}
+				#content .fondo form .enviar{width: 30%; height: 20%;}
+}
+
+@media all and (orientation:portrait) and (min-width: 700px){
+	#content .texto{background-image: url(../images/awafrut/textos/registro-vertical-hd.jpg);}
+}
+
+@media all and (orientation:landscape) and (min-width: 700px){
+	#content .texto{background-image: url(../images/awafrut/textos/registro-horizontal-hd.jpg);}
+}

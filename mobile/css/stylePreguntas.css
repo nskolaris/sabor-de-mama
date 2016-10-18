@@ -1,0 +1,45 @@
+#container{overflow: auto;}
+#content{}
+	#content .texto{
+		background-color: #ffff00;
+		color: #fb801e;
+		overflow: hidden;
+		font-style: italic;
+	}
+		#content .texto .numero{background-repeat: no-repeat; background-position: center center; background-size: contain; height: 100%; float: left;}
+		#content .texto h1{float: left;}
+	#content .fondo{background-image: url(../images/awafrut/fondos/fondo.jpg); position: relative; text-align: center; overflow: auto;}
+		#content .fondo .respuestas{display: none;}
+			#content .fondo .respuesta{
+				font-family: Arial;
+				text-align: left;
+				display: block;
+				font-size: 15px;
+				background-color: #ff7200;
+				background-image: url(../images/awafrut/botones/respuesta.jpg);
+				background-repeat: no-repeat;
+				text-decoration: none;
+				color: white;
+				margin: 0 auto;
+			}
+			#content .fondo .respuesta.selected{background-image: url(../images/awafrut/botones/respuesta-selected.jpg);}
+@media all and (orientation:portrait){
+	#content{height: 83%;}
+		#content .texto{height: 14%;}
+			#content .texto .numero{width: 16%; margin: 0% 2%;}
+			#content .texto h1{width: 80%; width: 77%; padding-right: 3%;}
+		#content .fondo{min-height: 86%; background-size: 20% auto;}
+			#content .fondo .respuestas{}
+			#content .fondo .respuesta:first-child{margin-top: 3%;}
+			#content .fondo .respuesta{margin-bottom: 2%; padding: 1% 2% 1% 12%; background-size: 3% auto; background-position: 3% center; margin: 0% 6%; margin-bottom: 3%;}
+}
+@media all and (orientation:landscape){
+	#content{height: 80%;}
+		#content .texto{height: 18%;}
+			#content .texto .numero{width: 8%; margin: 0% 1%;}
+			#content .texto h1{width: 90%; width: 88%; padding-right: 2%;}
+		#content .fondo{min-height: 82%; background-size: 7% auto;}
+			#content .fondo .respuestas{}
+			#content .fondo .respuesta:first-child{margin-top: 2%;}
+			#content .fondo .respuesta{margin-bottom: 1%; padding: 1% 2% 1% 5%; background-size: 2% auto; background-position: 1% center; margin: 0% 2%; margin-bottom: 1%;}
+}

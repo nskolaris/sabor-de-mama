@@ -1,0 +1,54 @@
+#content{}
+	#content .texto{
+		background-color: #ffff00;
+		background-image: url(../images/awafrut/textos/gracias.jpg);
+		background-repeat: no-repeat;
+	}
+	#content .fondo{background-image: url(../images/awafrut/fondos/fondo.jpg); position: relative; text-align: center; overflow: hidden;}
+		#content .fondo .caja{ position: relative; background-color: #ffba00; background-repeat: no-repeat; overflow: hidden;}
+			#content .fondo .caja .text{background-repeat: no-repeat; background-position: center center; background-size: contain;}
+			#content .fondo .caja .botellas{background-repeat: no-repeat; background-image: url(../images/awafrut/botellas.jpg); background-position: center center; background-size: contain;}
+			#content .fondo .caja .fb-awafrut{
+				background-color: #207eff;
+				background-image: url(../images/awafrut/botones/awafrut-fb.jpg);
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: auto 65%;
+			}
+@media all and (orientation:portrait){
+	#content{height: 83%;}
+		#content .texto{height: 14%; background-size: 85% auto; background-position: center center;}
+		#content .fondo{height: 86%; background-size: 20% auto;}
+			#content .fondo .caja{
+				margin: 5% 5%;
+				height: 90%;
+			}
+				#content .fondo .caja .text{background-image: url(../images/awafrut/textos/final-vertical.jpg); height: 20%; width: 86%; margin: 0% 7%;}
+				#content .fondo .caja .botellas{height: 60%; width: 76%; margin: 0% 12%; background-size: 100% auto; background-position: center top;}
+				#content .fondo .caja .fb-awafrut{display: block; margin: 0 auto; width: 70%; height: 15%; margin-bottom: 5%;}
+}
+@media all and (orientation:landscape){
+	#content{height: 80%;}
+		#content .texto{height: 18%; background-size: auto 65%; background-position: 10% center;}
+		#content .fondo{height: 82%; background-size: 7% auto;}
+			#content .fondo .caja{
+				margin: 2% 5%;
+				height: 85%;
+			}
+				#content .fondo .caja .text{background-image: url(../images/awafrut/textos/final.jpg); height: 38%; float: right; width: 45%; margin: 5% 5% 0% 0%;}
+				#content .fondo .caja .botellas{width: 50%; height: 90%; margin-top: 4%; float: left;}
+				#content .fondo .caja .fb-awafrut{display: block; height: 25%; width: 45%; margin: 3% 5% 0% 0%; float: right;}
+}
+
+@media all and (min-width: 700px){
+	#content .fondo .caja .botellas{background-image: url(../images/awafrut/botellas-hd.jpg);}
+	#content .texto{	background-image: url(../images/awafrut/textos/gracias-hd.jpg);}
+}
+
+@media all and (orientation:portrait) and (min-width: 700px){
+	#content .fondo .caja .text{background-image: url(../images/awafrut/textos/final-vertical-hd.jpg);}
+}
+
+@media all and (orientation:landscape) and (min-width: 700px){
+	#content .fondo .caja .text{background-image: url(../images/awafrut/textos/final-hd.jpg);}
+}

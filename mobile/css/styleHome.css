@@ -1,0 +1,47 @@
+#content{}
+	#content .texto{
+		background-color: #ffff00;
+		background-image: url(../images/awafrut/textos/home.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+	#content .fondo{background-image: url(../images/awafrut/fondo-personas.jpg); background-repeat: no-repeat; position: relative;}
+		#content .fondo .participar{
+			background-color: #ffff00;
+			background-image: url(../images/awafrut/textos/participa.jpg);
+			background-repeat: no-repeat;
+			margin: 0 auto;
+			display: block;
+			position: relative;
+		}
+			#content .fondo .participar .tablet{
+				background-image: url(../images/awafrut/tablet.png);
+				background-repeat: no-repeat;
+				position: absolute;
+			}
+	#content .botones{position: relative;}
+		#content .botones a{display: inline-block; position: absolute; background-repeat: no-repeat; background-position: center center;}
+		#content .botones .fan{background-color: #1da7ff; background-image: url(../images/awafrut/botones/btn-fan.jpg);}
+		#content .botones .share{background-color: #207eff; background-image: url(../images/awafrut/botones/btn-share.jpg);}
+@media all and (orientation:portrait){
+	#content{height: 83%;}
+		#content .texto{height: 14%; background-size: auto 60%;}
+		#content .fondo{height: 70%; background-size: auto 120%; background-position: center bottom;}
+			#content .fondo .participar{width: 75%; height: 20%; top: 70%; background-size: 60% auto; background-position: 80% center;}
+				#content .fondo .participar .tablet{width: 36%; height: 165%; top: -30%; left: -10%; background-size: contain;}
+		#content .botones{height: 16%;}
+			#content .botones a{width: 35%; height: 50%; top: 25%; background-size: 100% auto;}
+			#content .botones .fan{left: 13%;}
+			#content .botones .share{right: 13%;}
+}
+@media all and (orientation:landscape){
+	#content{height: 80%;}
+		#content .texto{height: 18%; background-size: auto 75%;}
+		#content .fondo{height: 67%; background-size: 100% auto; background-position: center center;}
+			#content .fondo .participar{width: 50%; height: 30%; top: 65%; background-size: auto 70%; background-position: 70% center;}
+				#content .fondo .participar .tablet{width: 37%; height: 145%; top: -40%; left: -5%; background-size: contain}
+		#content .botones{height: 15%;}
+			#content .botones a{width: 22%; height: 70%; top: 15%; background-size: auto 100%;}
+			#content .botones .fan{left: 25%;}
+			#content .botones .share{right: 25%;}
+}
